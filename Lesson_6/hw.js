@@ -16,18 +16,21 @@ function getFebonachiLine(n, m) {
     let NewArr = [n];
     for (i = 2; arr[i-1] < n; i++) {
         arr.push(arr[i-2]+arr[i-1]);
-        if (arr[i]!==n) {
-            return (`${n} is not aFibonacci Number`);
-        }
-        while (NewArr.length<m) {
-            i++;
-            arr[i]=arr[i-2]+arr[i-1];
-            NewArr.push(arr[i]);
-        } 
+    }
+    if (arr[arr.length-1]!==n) {
+        return (`${n} is not aFibonacci Number`);
+    }
+    while (NewArr.length<m) {
+        arr[i]=arr[i-2]+arr[i-1];
+        NewArr.push(arr[i]);
+        i++;
     }
     return (NewArr)
 }
 console.log(getFebonachiLine(34, 10))
+console.log(getFebonachiLine(8, 10))
+console.log(getFebonachiLine(89, 10))
+console.log(getFebonachiLine(7, 10))
 
 //даны 2 4-х значных числа с неповторяющимися цифрами, надо определить сколько 
 //цифр в этих числах совпадают по значению и позиции и сколько только по значению (3487 и 3794 ---> 1 и 2 )
