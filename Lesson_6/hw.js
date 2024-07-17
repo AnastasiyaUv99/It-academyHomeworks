@@ -11,26 +11,16 @@ function getMaxValue(arr) {
 console.log(getMaxValue([3,67,15,42,870,200]))
 
 //записать в массив ряд фибоначчи начиная с N члена с длинной массива M
-function getFebonachiLine(n, m) {
+function getFebonachiLine(n, m){
     let arr = [0,1];
-    let NewArr = [n];
-    for (i = 2; arr[i-1] < n; i++) {
-        arr.push(arr[i-2]+arr[i-1]);
+    for (i = 2; i < n + m; i++) {
+        arr.push(arr[i-2]+arr[i-1])
     }
-    if (arr[arr.length-1]!==n) {
-        return (`${n} is not aFibonacci Number`);
-    }
-    while (NewArr.length<m) {
-        arr[i]=arr[i-2]+arr[i-1];
-        NewArr.push(arr[i]);
-        i++;
-    }
-    return (NewArr)
+    return arr.slice(n)
 }
-console.log(getFebonachiLine(34, 10))
-console.log(getFebonachiLine(8, 10))
-console.log(getFebonachiLine(89, 10))
-console.log(getFebonachiLine(7, 10))
+console.log (getFebonachiLine(3, 5))
+console.log (getFebonachiLine(7, 10))
+console.log (getFebonachiLine(4, 6))
 
 //даны 2 4-х значных числа с неповторяющимися цифрами, надо определить сколько 
 //цифр в этих числах совпадают по значению и позиции и сколько только по значению (3487 и 3794 ---> 1 и 2 )
