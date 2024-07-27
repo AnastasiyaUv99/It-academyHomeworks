@@ -28,7 +28,7 @@ console.log("\n")
 необходимых для этого (итерация - это проход цикла), и запишите его в переменную num.
 */
 
-function bisection(n, num2) {
+function getBisection(n, num2) {
     let num = 0
     while (n >= num2) {
         n = n / 2
@@ -37,21 +37,21 @@ function bisection(n, num2) {
     return `После ${num} итераций деления получится число ${n}` 
 }
 
-console.log(bisection(1000,50))
-console.log(bisection(1045,5))
-console.log(bisection(100,12))
+console.log(getBisection(1000,50))
+console.log(getBisection(1045,5))
+console.log(getBisection(100,12))
 console.log("\n")
 
 
 // Дан массив arr. Найдите среднее арифметическое его элементов. Проверьте задачу на массиве с элементами 12, 15, 20, 25, 59, 79.
 
-function average(arr) {
+function getAverage(arr) {
     let s = arr.reduce((prev,cur) => cur + prev)
-    return `Среднее арифметическое элементов равно ${s / arr.length}`
+    return s / arr.length
 }
 
-console.log(average([12, 15, 20, 25, 59, 79]))
-console.log(average([36, 0, 0, 0, 0, 0]))
+console.log(getAverage([12, 15, 20, 25, 59, 79]))
+console.log(getAverage([36, 0, 0, 0, 0, 0]))
 console.log("\n")
 
 
@@ -90,10 +90,10 @@ console.log("\n")
 
 // Дан массив [3, 4, 1, 2, 7. 30. 50]. Отсортируйте его.
 
-function sorting(arr) {
+function getSorting(arr) {
     return arr.sort()
 }
 
-console.log(sorting([3, 4, 1, 2, 7, 30, 50]))
-console.log(sorting([3, 4, 100, 2, 7, 30, 50]))
-console.log(sorting([300, 4, 1, 200, 7, 30, 50]))
+console.log(getSorting([3, 4, 1, 2, 7, 30, 50]))
+console.log(getSorting([3, 4, 100, 2, 7, 30, 50]))
+console.log(getSorting([300, 4, 1, 200, 7, 30, 50]))
