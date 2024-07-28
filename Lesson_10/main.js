@@ -22,64 +22,7 @@ let giftBox = new GiftBuilder().addSweet(Alenka).addSweet(Romashka).addSweet(Gum
 
 // console.log(JSON.stringify(assorti, null, 1))
 
-assorti.sortedSweets = "calories"
-console.log(JSON.stringify(assorti.sortedSweets, null, 4))
+// assorti.sortedSweets = "calories"
+// console.log(JSON.stringify(assorti.sortedSweets, null, 4))
 
 // console.log(assorti.getSweetByParametrs(minWeight = 100, maxWeight = 450, minCalories = 370, maxCalories = 430))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// class GiftBuilder {
-//     constructor() {
-//       this.gift = new Gift();
-//     }
-//     addSweet(sweet) {
-//       this.gift.addSweet(sweet);
-//     }
-//     getGift() {
-//       return this.gift;
-//     }
-//   }
-
-//   const builder = new GiftBuilder();
-//   builder.addSweet(Bonpari);
-//   builder.addSweet(Romashka);
-//   builder.addSweet(Gummi )
