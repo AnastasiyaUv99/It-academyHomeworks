@@ -20,8 +20,8 @@ jobs:
         with:
           node-version: '20'
       - name: Install Dependencies
-        working-directory: ./lesson_13
+        working-directory: ./Lesson_13
         run: npm install
       - name: Test runner
-        working-directory: ./lesson_13
+        working-directory: ./Lesson_13
         run: npx mocha
