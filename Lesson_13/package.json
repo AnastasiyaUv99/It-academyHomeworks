@@ -7,8 +7,7 @@
     "test:report": "mocha --reporter mochawesome",
     "lint": "eslint --debug test/calculatorTest.spec.js --fix",
     "lint:write": "eslint ./ --fix && npm run pretty",
-    "pretty": "prettier --write *.js",
-    "test": "npm run lint && mocha"
+    "pretty": "prettier --write *.js"
   },
   "keywords": [],
   "author": "",
