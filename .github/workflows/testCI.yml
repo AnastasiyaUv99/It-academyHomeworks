@@ -24,4 +24,4 @@ jobs:
         run: npm install --force
       - name: Test runner
         working-directory: ./Lesson_13
-        run: npm run test
+        run: npx mocha
