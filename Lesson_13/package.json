@@ -1,0 +1,31 @@
+{
+  "name": "lesson_13",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test:report": "mocha --reporter mochawesome",
+    "lint": "eslint --debug test/calculatorTest.spec.js --fix",
+    "lint:write": "eslint ./ --fix && npm run pretty",
+    "pretty": "prettier --write *.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3"
+  }
+}
