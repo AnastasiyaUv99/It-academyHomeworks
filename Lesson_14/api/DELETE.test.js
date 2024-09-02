@@ -16,7 +16,6 @@ describe('Activities Delete methods validations', () => {
                 'server': 'Kestrel', 
             }
         })
-        console.log(response.headers)
         expect(response.status).toEqual(200)
     })
     test('should be appropriate json schema', async () => {
