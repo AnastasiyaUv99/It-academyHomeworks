@@ -18,7 +18,7 @@ class Basket extends Base {
   }
 
   get selectAllButton() {
-    return $('#goods-block > tbody > tr.goods-table__row.goods-table__row_footer > td > div > div.goods-table-cell__aside > label > span > span > span');
+    return $('span.i-checkbox__faux:last-child');
   }
 
   get deleteButton() {
