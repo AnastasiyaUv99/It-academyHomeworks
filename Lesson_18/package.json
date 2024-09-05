@@ -1,0 +1,38 @@
+{
+  "name": "lesson_18",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.js",
+    "lint": "eslint --debug test/POtest.e2e.js --fix",
+    "lintPO": "eslint --debug pageobjects/**/*.js --fix",
+    "lint:write": "eslint ./ --fix && npm run pretty",
+    "pretty": "prettier --write *.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@wdio/allure-reporter": "^9.0.4",
+    "@wdio/cli": "^9.0.7",
+    "@wdio/local-runner": "^9.0.7",
+    "@wdio/mocha-framework": "^9.0.6",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "wdio-wait-for": "^3.0.11"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.30.0",
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3"
+  }
+}
